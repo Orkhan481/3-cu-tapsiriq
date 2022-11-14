@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --primary:#FD841F;
+    --secondary:#FCE700;
+    --white:#fff;
+    --black:#000;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    width: 100%;
+    background-color: #FD841F;
+    background-image: linear-gradient(30deg, #FD841F 0%, #FCE700 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+}
+form{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 10px;
+    padding:10px;
+    width: 30%;
+    height: 350px;
+}
+.messagesContainer{
+    color:#000;
+}
+.messagesContainer h5{
+    font-size: 26px;
+    text-align: center;
+    margin-bottom:10px;
+}
+h3{
+    font-size: 28px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+input,
+textarea
+{
+    font-size: 20px;
+    width: 80%;
+    margin: 10px;
+    height: 50px;
+    padding: 0 8px;
+    outline: none;
+    border : none;
+    border-left:1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    transition: 0.3s ease;
+}
+#sendBtn{     
+    width: 50%;
+    border-radius: 5px ;
+    border: 1px solid var(--primary);
+    background-color: var(--secondary);
+    color: white;
+    height: 60px;
+
+}
+
+#sendBtn:hover
+{
+    opacity: 0.3s;
+    box-shadow: 1px 1px 10px #c4c4c4;
+    transition: 0.3s ease;
+}
+ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: 480px;
+    min-height: 50px;
+    color: white;
+    font-size: 20px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 10px gray;
+}
+ul li{
+    color: black;
+    list-style-type: none;
+}
